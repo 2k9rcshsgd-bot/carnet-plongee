@@ -1,0 +1,18 @@
+{
+  "name": "Carnet de plongée",
+  "short_name": "Carnet Plongée",
+  "description": "Carnet de plongée bilingue (français / English), hors connexion.",
+  "id": "/carnet-plongee/",
+  "start_url": "/carnet-plongee/",
+  "scope": "/carnet-plongee/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#052C4B",
+  "theme_color": "#052C4B",
+  "lang": "fr",
+  "icons": [
+    { "src": "/carnet-plongee/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "/carnet-plongee/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "/carnet-plongee/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

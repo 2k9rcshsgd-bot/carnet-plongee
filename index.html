@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover" />
+    <title>Carnet de plongée</title>
+    <meta name="description" content="Carnet de plongée bilingue (français / English) — fonctionne hors connexion." />
+    <meta name="theme-color" content="#052C4B" />
+    <!-- App installée sur l'écran d'accueil : plein écran, sans barre du navigateur -->
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="Carnet Plongée" />
+    <link rel="apple-touch-icon" href="/carnet-plongee/apple-touch-icon.png" />
+    <link rel="manifest" href="/carnet-plongee/manifest.webmanifest" />
+    <style id="expo-reset">
+      html,
+      body {
+        height: 100%;
+      }
+      body {
+        overflow: hidden;
+        margin: 0;
+        background: #eef3f7;
+        overscroll-behavior: none;
+        -webkit-text-size-adjust: 100%;
+        -webkit-tap-highlight-color: transparent;
+      }
+      #root {
+        display: flex;
+        height: 100%;
+        flex: 1;
+      }
+      /* écran de chargement, remplacé par l'app dès qu'elle démarre */
+      .boot {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 18px;
+        background: linear-gradient(135deg, #0b6a92, #052c4b);
+        color: #fff;
+        font: 700 20px -apple-system, system-ui, 'Segoe UI', Roboto, sans-serif;
+      }
+      .boot img {
+        width: 96px;
+        height: 96px;
+        border-radius: 22px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+      }
+      @media (prefers-color-scheme: dark) {
+        body {
+          background: #04111e;
+        }
+      }
+    </style>
+  <link rel="icon" href="/carnet-plongee/favicon.ico"/></head>
+
+  <body>
+    <noscript>Activez JavaScript pour utiliser le carnet de plongée.</noscript>
+    <div id="root">
+      <div class="boot"><img src="/carnet-plongee/icon-192.png" alt="" />Carnet de plongée</div>
+    </div>
+    <script>
+      // Fonctionnement hors connexion
+      if ('serviceWorker' in navigator && location.pathname.indexOf('/carnet-plongee') === 0) {
+        window.addEventListener('load', function () {
+          navigator.serviceWorker.register('/carnet-plongee/sw.js', { scope: '/carnet-plongee/' }).catch(function () {});
+        });
+      }
+    </script>
+  <script src="/carnet-plongee/_expo/static/js/web/entry-0237d6543fde6394b9b8516372d5032f.js" defer></script>
+</body>
+</html>
