@@ -1,9 +1,10 @@
 // Généré par scripts/build-web.mjs — fonctionnement hors connexion
-const CACHE = 'carnet-plongee-536db6b52a72';
+const CACHE = 'carnet-plongee-b7e0ee95cbdf';
 const BASE = '/carnet-plongee/';
 const FILES = [
- "/carnet-plongee/_expo/static/js/web/entry-0237d6543fde6394b9b8516372d5032f.js",
+ "/carnet-plongee/_expo/static/js/web/entry-882bd138aad7629be2ad5ea0db62697f.js",
  "/carnet-plongee/apple-touch-icon.png",
+ "/carnet-plongee/assets/assets/images/icon.a3fef0563e03cbff91b2b2ed392f98ef.png",
  "/carnet-plongee/assets/node_modules/@expo/vector-icons/build/vendor/react-native-vector-icons/Fonts/MaterialCommunityIcons.6e435534bd35da5fef04168860a9b8fa.ttf",
  "/carnet-plongee/assets/node_modules/expo-router/assets/arrow_down.017bc6ba3fc25503e5eb5e53826d48a8.png",
  "/carnet-plongee/assets/node_modules/expo-router/assets/error.d1ea1496f9057eb392d5bbf3732a61b7.png",
