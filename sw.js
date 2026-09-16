@@ -1,8 +1,8 @@
 // Généré par scripts/build-web.mjs — fonctionnement hors connexion
-const CACHE = 'carnet-plongee-d8396b9c5938';
+const CACHE = 'carnet-plongee-ffa8206defcd';
 const BASE = '/carnet-plongee/';
 const FILES = [
- "/carnet-plongee/_expo/static/js/web/entry-fd985b936cc4516e828b79c5a3d1cade.js",
+ "/carnet-plongee/_expo/static/js/web/entry-6a2d9e42592e645eb93c90298718569d.js",
  "/carnet-plongee/apple-touch-icon.png",
  "/carnet-plongee/assets/assets/images/icon.a3fef0563e03cbff91b2b2ed392f98ef.png",
  "/carnet-plongee/assets/node_modules/@expo/vector-icons/build/vendor/react-native-vector-icons/Fonts/MaterialCommunityIcons.6e435534bd35da5fef04168860a9b8fa.ttf",
@@ -29,7 +29,8 @@ const FILES = [
  "/carnet-plongee/icon-512.png",
  "/carnet-plongee/icon-maskable-512.png",
  "/carnet-plongee/index.html",
- "/carnet-plongee/manifest.webmanifest"
+ "/carnet-plongee/manifest.webmanifest",
+ "/carnet-plongee/robots.txt"
 ];
 
 self.addEventListener('install', (event) => {
